@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EP - Engineered for Perfection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #00ccff;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ccff;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .cars {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .car {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .car:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+
+    .car img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .car-details {
+      padding: 1rem;
+    }
+
+    .car-details h3 {
+      color: #00ccff;
+      margin-bottom: 0.5rem;
+    }
+
+    .about, .contact {
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 2rem auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      background-color: #2a2a2a;
+      color: #f1f1f1;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #00ccff;
+      color: #121212;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00aacc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #1e1e1e;
+      border-top: 1px solid #333;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EP - Engineered for Perfection</h1>
+    <nav>
+      <a href="#featured">Best Sellers</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Drive BOLD. Drive FAST. Drive PERFECT.</h2>
+    <p>BECAUSE...The cars we drive say a lot about us.</p>
+  </section>
+
+  <section class="section" id="featured">
+    <h2 style="text-align:center;">BEST SELLERS</h2>
+    <div class="cars">
+      <div class="car">
+        <img src="eng_pl_rear-side-splitters-v-2-bmw-m4-f82-15321_2.jpg" alt="BMW">
+        <div class="car-details">
+          <h3>BMW M4 F82</h3>
+          <p>Where POWER Meets LUXURY.</p>
+        </div>
+      </div>
+      <div class="car">
+        <img src="003-2024-porsche-911-gt3rs.avif" alt="Porsche">
+        <div class="car-details">
+          <h3>2025 Porsche 911 GT3</h3>
+          <p>Precision engineering built for thrill seekers.</p>
+        </div>
+      </div>
+      <div class="car">
+        <img src="2025-ford-mustang-mach-e-premium-sport-appearance-exterior-102-67166e9e032b9.jpg" alt="Mustang">
+        <div class="car-details">
+          <h3>2025 Ford Mustang EV</h3>
+          <p>Classic muscle reimagined for the fFuture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>About EP:</h2>
+    <img src="logistics_optimization_car-dealerships.jpg" alt="Mustang">
+    <p>We bring Perfetion, Power and Luxury of driving to your garage — combining cutting-edge modern innovation with iconic performance and style. At EP, we’re not just selling cars; we’re shaping the future of driving. Born from a passion for innovation and a love for the open road, our mission is to bring you the very best in automotive design, technology, and performance. From sleek electric models to high-powered sports cars, we carefully curate a collection of vehicles that excite, inspire, and elevate every journey.
+
+        Whether you're a first-time buyer, a lifelong enthusiast, or someone chasing the thrill of the next great drive — you're in the right place. With a commitment to quality, integrity, and customer satisfaction, EP is more than a dealership — it’s a destination for dreamers and drivers alike.</p>
+    <p>Your next ride isn’t just a car. It’s an experience.</p>
+    </section>
+
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us HERE:</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 EP - Engineered for Perfection. All rights reserved.
+  </footer>
+
+</body>
+</html>
